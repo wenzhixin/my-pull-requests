@@ -1,6 +1,6 @@
 # My Pull Requests
 
-My pull Requests
+My Pull Requests
 
 ## Website
 
@@ -14,7 +14,7 @@ http://pr.wenzhixin.net.cn
 * Flexbox
 * [GitHub API](https://developer.github.com/v3/search/#search-issues)
 
-## ToDo
+## Todo
 
 * show stars and forks of repository
 
