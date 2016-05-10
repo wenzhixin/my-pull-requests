@@ -30,7 +30,8 @@ a {
     display: none;
 }
 .alert span {
-    margin-left: 20px;
+    margin-top: 10px;
+    display: block;
 }
 .alert input {
     display: inline-block;
@@ -46,16 +47,6 @@ a {
     display: flex;
     padding: 0.5em;
     width: 100%;
-}
-@media all and (min-width: 40em) {
-    .list-item {
-        width: 50%;
-    }
-}
-@media all and (min-width: 60em) {
-    .list-item {
-        width: 33.33%;
-    }
 }
 .list-content {
     display: flex;
@@ -80,4 +71,30 @@ a {
     flex: 1 0 auto;
     margin-top: 20px;
     padding-left: 20px;
+}
+@media all and (min-width: 40em) {
+    .list-item {
+        width: 50%;
+    }
+    .alert .user-info {
+        display: inline-block;
+    }
+    .alert span {
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 20px;
+    }
+}
+@media all and (min-width: 60em) {
+    .list-item {
+        width: 33.33%;
+    }
+    .alert .user-info {
+        display: inline-block;
+    }
+    .alert span {
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 20px;
+    }
 }

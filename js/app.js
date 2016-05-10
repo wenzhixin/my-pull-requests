@@ -17,7 +17,7 @@ App.prototype = {
                     title: title,
                     owner: arr[1],
                     name: arr[0],
-                    url: item.repository_url
+                    url: 'https://github.com/' + title
                 };
                 // TODO: add stars and forks
                 // $.ajax({
@@ -90,6 +90,7 @@ $(function () {
                     new App({
                         el: '#app',
                         data: {
+                            login: name,
                             total: res.data.total_count,
                             items: items
                         }

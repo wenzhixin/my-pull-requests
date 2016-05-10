@@ -29,6 +29,13 @@
                     <li><a href="http://travels.wenzhixin.net.cn">游遍广州</a></li>
                     <li><a href="http://wenzhixin.net.cn/about">关于我</a></li>
                 </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- GitHub buttons: see http://ghbtns.com -->
+                    <li><iframe class="navbar-text" src="http://ghbtns.com/github-btn.html?user=wenzhixin&repo=my-pull-requests&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe></li>
+                    <li><iframe class="navbar-text" src="http://ghbtns.com/github-btn.html?user=wenzhixin&repo=my-pull-requests&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe></li>
+                    <li><iframe class="navbar-text" src="http://ghbtns.com/github-btn.html?user=wenzhixin&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="200" height="20"></iframe></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -37,9 +44,11 @@
         <div class="loading">Loading...</div>
         <div id="app" class="container">
             <div class="alert alert-info">
-                <img src="{{avatar_url}}" width="32" height="32">
-                <input class="form-control" type="text" value="{{login}}"
-                    id="username" @keyup.enter="onEnter">
+                <div class="user-info">
+                    <img src="{{avatar_url}}" width="32" height="32">
+                    <input class="form-control" type="text" value="{{login}}"
+                        id="username" @keyup.enter="onEnter">
+                </div>
                 <span>Total Repositories: <b>{{items.length}}</b></span>
                 <span>Total Pull Requests: <b>{{total}}</b></span>
             </div>
@@ -49,8 +58,8 @@
                         <div class="title"><span>{{ item.owner }}</span></div>
                         <h2><a href="{{ item.url }}" target="_blank">{{ item.name }}</a></h2>
                         <p>
-                            <a href="{{ item.url }}/stargazers">Star {{ item.stars }}</a>
-                            <a href="{{ item.url }}/network">Fork {{ item.forks }}</a>
+                            <a href="{{ item.url }}/stargazers" target="_blank">Star {{ item.stars }}</a>
+                            <a href="{{ item.url }}/network" target="_blank">Fork {{ item.forks }}</a>
                         </p>
                         <div class="title"><span>{{ item.pull_requests.length }} Pull Requests</span></div>
                         <ul>
