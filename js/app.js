@@ -60,7 +60,7 @@ App.prototype = {
             data: this.data,
             methods: {
                 onEnter: function (event) {
-                    location.href = location.origin + location.pathname + '?' +
+                    location.href = location.origin + location.pathname + '?login=' +
                         $(event.target).val();
                 }
             }
@@ -74,7 +74,7 @@ App.prototype = {
 $(function () {
     var items = [];
     var getData = function (page) {
-        var name = location.search.substring(1) || 'wenzhixin';
+        var name = url('?login') || 'wenzhixin';
         $.ajax({
             url: 'https://api.github.com/search/issues?q=type:pr+state:closed+author:'  +
                 name + '&per_page=100&page=' + page,

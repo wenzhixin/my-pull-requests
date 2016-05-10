@@ -11,6 +11,7 @@ http://pr.wenzhixin.net.cn
 * [jQuery](http://jquery.com/)
 * [Bootstrap](http://getbootstrap.com/)
 * [Vuejs](http://vuejs.org/)
+* [js-url](https://github.com/websanova/js-url)
 * Flexbox
 * [GitHub API](https://developer.github.com/v3/search/#search-issues)
 
